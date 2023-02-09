@@ -1,0 +1,180 @@
+// Header Styles
+// General Styling + Smartphone Media
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 7% 4%;
+  z-index: 10;
+}
+
+.navbar__brand {
+  width: 25%;
+  height: 100%;
+}
+
+.brand__logo {
+  width: 110%;
+  height: 110%;
+}
+
+.signin__button {
+  background-color: #dc030f;
+  border: 1px solid #dc030f;
+  color: white;
+  font-size: 15px;
+  padding: 0.1rem 0.5rem;
+  border-radius: 4px;
+}
+
+.navbar__nav__items {
+  display: flex;
+  gap: 10px;
+}
+
+.dropdown__container {
+  box-shadow: 0px 0px 1px 1px #818181;
+  // border: 1px solid white;
+  padding: 0.2rem 0.3rem;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+.language__drop__down {
+  background: transparent;
+  border: none;
+  color: white;
+}
+
+.language__drop__down:focus {
+  outline: none;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .navbar {
+    padding: 3% 5%;
+  }
+  .navbar__brand {
+    width: 105px;
+  }
+
+  .signin__button {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+
+  .dropdown__container {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navbar__nav__items {
+    gap: 30px;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .navbar {
+    padding: 1.25% 3%;
+  }
+
+  .navbar__brand {
+    width: 160px;
+  }
+
+  .signin__button {
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+
+  .dropdown__container {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .navbar__nav__items {
+    gap: 30px;
+  }
+}
+
+// Footer Styles
+// General Styling + Smartphone Media
+footer {
+  border-top: 8px solid #222222;
+  padding: 3rem 2.2rem 1rem 2.2rem;
+  color: #757575;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__row__1 > h4 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer__row__2 {
+  width: 100%;
+  
+  p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 0.4rem 0px;
+    margin: 0px;
+  }
+}
+
+.footer__row__3 {
+  margin-right: auto;
+}
+.footer__row__3 > .dropdown__container {
+  box-shadow: -.25px -.25px 2px #818181;
+  padding: 0.9rem 0.9rem;
+  border-radius: 2px;
+  background: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+.footer__row__3 > .dropdown__container > .language__drop__down {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 1rem;
+}
+
+.footer__row__4 > p {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  footer {
+    border-top: 8px solid #222222;
+    padding: 5rem 4.5rem 2rem 4.5rem;
+    color: #757575;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer__row__1 {
+    display: flex;
+    align-items: center;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  footer {
+    padding: 5rem 31rem 2.5rem 31rem;
+    margin-top: 3.8rem;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+}

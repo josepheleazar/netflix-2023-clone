@@ -1,0 +1,124 @@
+@import './Homepage.module.scss';
+
+// General Styling + Smartphone Media
+.subscription__bg__image__container {
+  width: 100%;
+  height: 71.25vh;
+}
+
+.subscription__title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  transform: scale(1, 0.9);
+  line-height: 120%;
+}
+
+.subscription__bg__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.subscription__bg__overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 71.25vh;
+  background: rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+.subscription__card {
+  position: absolute;
+  top: 19%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscription__subtitle {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.subscription__description {
+  padding: 0px 20px 0px 20px;
+  font-weight: 400;
+  font-size: 1.1rem;
+  line-height: 125%;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .subscription__bg__image__container {
+    height: 60.5vh;
+  }
+
+  .subscription__bg__overlay {
+    height: 60.5vh;
+  }
+
+  .subscription__card {
+    top: 24%;
+    left: 30%;
+    transform: translate(-20%, -20%);
+  }
+  
+  .subscription__title {
+    font-weight: 600;
+    font-size: 3.2rem;
+    transform: scale(1, 0.95);
+    line-height: 120%;
+  }
+  
+  .subscription__subtitle {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  .subscription__description {
+    padding: 0px 2.2rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .subscription__bg__image__container {
+    height: 80vh;
+  }
+
+  .subscription__bg__overlay {
+    height: 80vh;
+  }
+
+  .subscription__card {
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .subscription__title {
+    font-weight: 600;
+    font-size: 4rem;
+    transform: scale(1, 0.95);
+    line-height: 120%;
+  }
+
+  .subscription__subtitle {
+    font-weight: 400;
+    font-size: 1.6rem;
+  }
+
+  .subscription__description {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+  }
+}

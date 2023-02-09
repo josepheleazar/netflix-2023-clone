@@ -1,0 +1,142 @@
+@import './Homepage.module.scss';
+
+// General Styling + Smartphone Media
+.FAQ__list__container {
+  border-top: 8px solid #222222;
+  padding: 2rem 0 3.5rem 0;
+}
+
+.FAQ__heading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 1.2rem 3rem 1.5rem 3rem;
+  text-align: center;
+}
+
+.FAQ__list {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7.5px;
+  justify-content: center;
+}
+
+.FAQ__accordion {
+  width: 100%;
+}
+
+.FAQ__title {
+  align-items: center;
+  background-color: #303030;
+  border: 1px solid #303030;
+  color: white;
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  padding: 0.8rem 1.2rem;
+  width: 100%;
+}
+
+.FAQ__visible {
+  background-color: #303030;
+  border-top: 1px solid black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.1s ease-in-out;
+}
+
+.FAQ__visible > p {
+  font-size: 1.1rem;
+  margin: 1.25rem;
+  line-height: 125%;
+}
+
+.FAQ__get__started__email {
+  text-align: center;
+}
+
+.FAQ__get__started__email > h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 1.2rem 0 0.8rem 0;
+  padding: 0 2rem;
+}
+
+// Tablet Media
+@media (min-width: 768px) {
+  .FAQ__list__container {
+    padding: 2.5rem 0rem 5rem;
+  }
+
+  .FAQ__heading {
+    font-size: 2.5rem;
+    margin: 1rem 0 0 0;
+    padding: 1rem;
+  }
+
+  .FAQ__list {
+    padding: 1rem 5rem;
+  }
+
+  .FAQ__title {
+    font-size: 1.25rem;
+  }
+
+  .FAQ__visible > p {
+    font-size: 1.25rem;
+  }
+
+  .FAQ__get__started__email {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center; 
+    transform: translateX(21%);
+    width: 70%;
+  }
+
+  .FAQ__get__started__email > h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0 1rem 0;
+    padding: 0 4rem;
+  }
+}
+
+// Desktop Media
+@media (min-width: 1024px) {
+  .FAQ__list__container {
+    padding: 2.5rem 9rem 1.5rem 9rem;
+  }
+
+  .FAQ__heading {
+    font-size: 3.1rem;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .FAQ__list {
+    padding: 1rem 25rem;
+  }
+
+  .FAQ__title {
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+  }
+
+  .FAQ__visible > p {
+    font-size: 1.6rem;
+    margin: 2rem;
+  }
+
+  .FAQ__get__started__email {
+    transform: translateX(0%);
+    width: 100%;
+  }
+
+  .FAQ__get__started__email > h3 {
+    font-size: 1.2rem;
+    margin: 3rem 0 1rem 0;
+    padding: 0;
+  }
+}

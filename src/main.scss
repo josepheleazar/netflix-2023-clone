@@ -1,0 +1,16 @@
+@font-face{
+  font-family: 'Netflix Sans';
+  src: url('./fonts/NetflixSans/NetflixSans-Regular.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Netflix Sans", sans-serif;
+}
